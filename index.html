@@ -1,0 +1,397 @@
+<!--? ALIREZA MEHRABAN *WEB DEVELOPER* 2022-09-18 -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی - مهرشعر</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start header -->
+    <header style="margin-bottom: 7rem;">
+        <nav class="fixed-top">
+            <!-- logo link-img  -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <!-- Toggle Button for menu -->
+                <div class="moblie-btn">
+                    <i id="mobile-btn" class="ri-menu-3-line"></i>
+                </div>
+            </div>
+            <!-- Nav links -->
+            <div id="nav-links" class="nav-links">
+                <div class="right-side">
+                    <ul>
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="poet.html">شاعران</a></li>
+                        <li><a href="poems.html">شعر</a></li>
+                        <li><a href="">مطالب ادبی</a></li>
+                        <li><a href="">معرفی کتاب</i></a></li>
+                        <li><a href="">شروع به کار</a></li>
+                        <li><a href="">ارتباط با ما</a></li>
+                    </ul>
+                </div>
+                <div class="left-side">
+                    <!-- Search input -->
+                    <div class="search-top">
+                        <form action="">
+                            <input type="text" placeholder="جستجوی شعر یا شاعر">
+                            <button type="button"><img src="images/search-line.svg" alt=""></button>
+                        </form>
+                    </div>
+                    <div class="login-btn">
+                        <a href="login.html">ورود / ثبت نام</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <!-- start main section -->
+    <div class="container-lg">
+        <div style="margin-top:2rem;" class="row">
+            <!-- right side -->
+            <div class="col-md-7 news">
+                <h3> <i class="ri-list-unordered"></i> آخرین نوشته های ادبی</h3>
+                <div class="ncl">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="">استاد هوشنگ ابتهاج آسمانی شد</a>
+                            <div style="font-size: 14px; color:#6c757d;margin:1rem 0 2rem 0;" class="date-part d-flex justify-content-between">
+                                <span>شادروان هوشنگ ابتهاج</span>
+                                <span>یک شنبه 31 شهریور 1401</span>
+                            </div>
+                            <div style="color: #343a40;" class="description-part">
+                                <p>خبر درگذشت هوشنگ ابتهاج جهرمی بسیار اندوهگین و متاثرم کرد</p>
+                                <p>شاعری توانمند , نویسنده ای زبردست , انسانی وارسته , فرهیخته ای بی ریا , خردمندی خاکی , و مهرورزی متواضع  . از آن دست انسانهایی ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="">
+                                <img style="width: 100%;height:100%;" src="images/ebtehaj.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="botton-div row">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column justify-content-between ncll">
+                            <div class="d-flex inh_nc ncs mb-4">
+                                <div class="d-flex flex-column w-70 pt-3 pb-2 px-3">
+                                    <a style="margin-bottom: 3rem;" href="">گهواره من کجاست</a>
+                                    <div class="align-self-start text-secondary hl d-flex justify-content-between w-100">
+                                        <span>علیرضا مهربان</span>
+                                        <span>یک شنبه 31 شهریور 1401</span>
+                                    </div>
+                                </div>
+                                <div class="w-30">
+                                    <img class="img" src="./images/1662539668-36.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column justify-content-between ncll">
+                            <div class="d-flex inh_nc ncs mb-4">
+                                <div class="d-flex flex-column w-70 pt-3 pb-2 px-3">
+                                    <a style="margin-bottom: 3rem;" href="">گهواره من کجاست</a>
+                                    <div class="align-self-start text-secondary hl d-flex justify-content-between w-100">
+                                        <span>علیرضا مهربان</span>
+                                        <span>یک شنبه 31 شهریور 1401</span>
+                                    </div>
+                                </div>
+                                <div class="w-30">
+                                    <img class="img" src="./images/1662539668-36.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Left side -->
+            <div class="col-md-4 news">
+                <h3> <i class="ri-list-unordered"></i> پربیننده ترین ها</h3>
+                <div class="d-flex flex-column justify-content-between ncl">
+                    <div class="d-flex inh_nc ncs mb-4">
+                        <div class="d-flex flex-column w-70 pt-3 pb-2 px-3">
+                            <a style="margin-bottom: 3rem;" href="">مرگ هم گاهی میخندد</a>
+                            <div class="align-self-start text-secondary hl d-flex justify-content-between w-100">
+                                <span>فرشاد فرشاد</span>
+                                <span>یک شنبه 16 شهریور 1401</span>
+                            </div>
+                        </div>
+                        <div class="w-30">
+                            <img class="img" src="./images/nopic.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ======================================= -->
+                <div class="d-flex flex-column justify-content-between ncl">
+                    <div class="d-flex inh_nc ncs mb-4">
+                        <div class="d-flex flex-column w-70 pt-3 pb-2 px-3">
+                            <a style="margin-bottom: 3rem;" href="">گهواره من کجاست</a>
+                            <div class="align-self-start text-secondary hl d-flex justify-content-between w-100">
+                                <span>علیرضا مهربان</span>
+                                <span>یک شنبه 31 شهریور 1401</span>
+                            </div>
+                        </div>
+                        <div class="w-30">
+                            <img class="img" src="./images/1662539668-36.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ======================================= -->
+                <div class="d-flex flex-column justify-content-between ncl">
+                    <div class="d-flex inh_nc ncs mb-4">
+                        <div class="d-flex flex-column w-70 pt-3 pb-2 px-3">
+                            <a style="margin-bottom: 3rem;" href="">مرگ هم گاهی میخندد</a>
+                            <div class="align-self-start text-secondary hl d-flex justify-content-between w-100">
+                                <span>علیرضا مهربان</span>
+                                <span>یک شنبه 31 شهریور 1401</span>
+                            </div>
+                        </div>
+                        <div class="w-30">
+                            <img class="img" src="./images/nopic.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End main Section -->
+    <!-- Start Slider -->
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-right">
+                    <h4 style="margin-bottom: .5rem;"><i class="ri-list-unordered"></i> شاعران برجسته</h4>
+                </div>
+                <!-- <div class="col-6 text-right">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+                </div> -->
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/foroogh.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">فروغ فرخ زاد</h4>
+                                                <p class="card-text">نگاه کن، تو میدمی و آفتاب میشود</p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/fazel_nazari.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">فاضل نظری</h4>
+                                                <p class="card-text">در دلم هستی و بین من و تو فاصله هاست</p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/gheisar.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">قیصر امین پور</h4>
+                                                <p class="card-text">سراسر محو شد عمرم همه محو نگاه تو</p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/molana.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">مولانا</h4>
+                                                <p class="card-text">صنما چگونه گویم که تو نور جان مایی</p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/iraj_jnati.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">ایرج جنتی</h4>
+                                                <p class="card-text">هرچه تبر زدی مرا، زخم نشد جوانه شد</p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/kazem-bahmani.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">کاظم بهمنی</h4>
+                                                <p class="card-text">در جهان تهی از عشق، نمی باید زیست</p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/rahi_moaeri.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">رهی معیری</h4>
+                                                <p class="card-text">اگرچه نیست وصالی، ولی خوشم به خیالت</p>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/shamloo.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">احمد شاملو</h4>
+                                                <p class="card-text">و قلب برای زندگی بس است</p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid imgg" alt="100%x280" src="images/akhavan_sales.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">مهدی اخوان ثالث</h4>
+                                                <p class="card-text">من اهل دوست داشتنم؛ تو اهل کجایی؟</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Slider -->
+    <div class="be_poet">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="poet-title text-center">
+                        <h2>حالا شاعر شو!</h2>
+                        <div class="now-poet">
+                            <p>به کانون شاعران مهر ملحق شو</p>
+                            <a class="btn btn-dark" href="">شاعر شو</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="news-email text-center">
+                        <h4>برای دریافت آخرین اخبار، ایمیل خود را وارد کنید</h4>
+                        <div class="form-email">
+                            <form action="">
+                                <input type="email" name="" id="" placeholder="ایمیل را وارد کنید">
+                                <button class="btn btn-dark">ارسال</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <ul>
+                                <h4>اطلاعات تماس</h4>
+                                <li><a href="">
+                                    آدرس: جهرم - بولوار خلیج فارس
+                                </a></li>
+                                <li><a href="">تلفن: 36221100</a></li>
+                                <li><a href="">تلفن همراه: 09224850196</a></li>
+                                <li>
+                                    <a href="">ایمیل: mr.kind1382@gmail.com
+                                    </a>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <ul>
+                                <h4>دسترسی آسان</h4>
+                                <li><a href="">اشعار</a></li>
+                                <li><a href="">مقالات</a></li>
+                                <li><a href="">درباره ما</a></li>
+                                <li><a href="">تماس با ما</a></li>
+                                <li><a href="">خرید شعر</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <ul>
+                                <h4>دسترسی آسان</h4>
+                                <li><a href="">اشعار</a></li>
+                                <li><a href="">مقالات</a></li>
+                                <li><a href="">درباره ما</a></li>
+                                <li><a href="">تماس با ما</a></li>
+                                <li><a href="">خرید شعر</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-links">
+                            <ul>
+                                <h4>دسترسی آسان</h4>
+                                <li><a href="">اشعار</a></li>
+                                <li><a href="">مقالات</a></li>
+                                <li><a href="">درباره ما</a></li>
+                                <li><a href="">تماس با ما</a></li>
+                                <li><a href="">خرید شعر</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

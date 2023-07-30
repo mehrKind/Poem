@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شاعران</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/poet.css">
+</head>
+<body>
+        <!-- start header -->
+        <header style="margin-bottom: 7rem;">
+            <nav class="fixed-top">
+                <!-- logo link-img  -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>                    <!-- Toggle Button for menu -->
+                    <div class="moblie-btn">
+                        <i id="mobile-btn" class="ri-menu-3-line"></i>
+                    </div>
+                </div>
+                <!-- Nav links -->
+                <div id="nav-links" class="nav-links">
+                    <div class="right-side">
+                        <ul>
+                            <li><a href="index.html">خانه</a></li>
+                            <li><a href="poet.html">شاعران</a></li>
+                            <li><a href="poems.html">شعر</a></li>
+                            <li><a href="">مطالب ادبی</a></li>
+                            <li><a href="">معرفی کتاب</i></a></li>
+                            <li><a href="">شروع به کار</a></li>
+                            <li><a href="">ارتباط با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-side">
+                        <!-- Search input -->
+                        <div class="search-top">
+                            <form action="">
+                                <input type="text" placeholder="جستجوی شعر یا شاعر">
+                                <button type="button"><img src="images/search-line.svg" alt=""></button>
+                            </form>
+                        </div>
+                        <div class="login-btn">
+                            <a href="">ورود / ثبت نام</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+
+        <div class="container">
+            <div class="row">
+                <!-- right side for News -->
+                <div class="col-md-3">
+                    <div class="right-part-poet ncl">
+                        <div class="all-poet-head">
+                            <h4 class="bold">همه شاعران</h4>
+                        </div>
+                        <div class="all-poet-body">
+                            <ul>
+                                <li><a href="">علیرضا مهربان</a></li>
+                                <li><a href="">هوشنگ ابتهاج</a></li>
+                                <li><a href="">فاضل نظری</a></li>
+                                <li><a href="">ایرج جنتی</a></li>
+                                <li><a href="">کاظم بهمنی</a></li>
+                                <li style="cursor: pointer;" class="text-center"><p class="bg-color" id="edame-poet">ادامه ...</p></li>
+                                <div class="edame-poet" id="poet-div">
+                                    <li><a href="">علیرضا مهربان</a></li>
+                                    <li><a href="">هوشنگ ابتهاج</a></li>
+                                    <li><a href="">فاضل نظری</a></li>
+                                    <li><a href="">ایرج جنتی</a></li>
+                                    <li><a href="">کاظم بهمنی</a></li>
+                                    <li style="cursor: pointer;" class="text-center"><p class="bg-color" id="remove-poet">پنهان کردن ...</p></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main section of poet part -->
+                <div class="col-md-6">
+                    <h4 style="font-size: 1.4rem; margin-top:10px;" class="bold text-center">شاعران برجسته</h4>
+                    <hr class="hr">
+                    <div class="poet-details ncl">
+                        <div class="poet-pics">
+                            <div class="container">
+                                <div class="row text-center poet-picture">
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/rahi_moaeri.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">رهی معیری</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/kazem-bahmani.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">کاظم بهمنی</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/fazel_nazari.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">فاضل نظری</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center poet-picture">
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/molana.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">مولانا</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/iraj_jnati.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">ایرج جنتی</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/gheisar.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">قیصر امین پور</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center poet-picture">
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/shamloo.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">شاملو</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/foroogh.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">فروغ فرخ زاد</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="caption-box">
+                                            <img src="images/akhavan_sales.jpg">
+                                            <div class="caption">
+                                                <div class="poet-name-hover">
+                                                    <div class="name">
+                                                        <a href="#">اخوان ثالث</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- left side -->
+                <div class="col-md-3">
+                    <div class="ad-part ncl">
+                        <div class="top-title">
+                            <!-- Events -->
+                            <p class="bold">تولد های اخیر</p>
+                            <div class="event-section d-flex justify-content-between">
+                                <div class="poet-name-event">
+                                    <a href="#">کاظم بهمنی</a>
+                                </div>
+                                <div class="poet-date">
+                                    <p>8/6/1345</p>
+                                </div>
+                            </div>
+                            <div class="event-section d-flex justify-content-between">
+                                <div class="poet-name-event">
+                                    <a href="#">ایرج جنتی</a>
+                                </div>
+                                <div class="poet-date">
+                                    <p>8/6/1345</p>
+                                </div>
+                            </div>
+                            <!-- Today Events -->
+                            <p class="bold">مناسبت های امروز</p>
+                            <p class="text-secondary">برای امروز مناسبتی تعریف نشده</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Footer -->
+        <footer>
+            <section class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <ul>
+                                    <h4>اطلاعات تماس</h4>
+                                    <li><a href="">
+                                        آدرس: جهرم - بولوار خلیج فارس
+                                    </a></li>
+                                    <li><a href="">تلفن: 36221100</a></li>
+                                    <li><a href="">تلفن همراه: 09224850196</a></li>
+                                    <li>
+                                        <a href="">ایمیل: mr.kind1382@gmail.com
+                                        </a>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <ul>
+                                    <h4>دسترسی آسان</h4>
+                                    <li><a href="">اشعار</a></li>
+                                    <li><a href="">مقالات</a></li>
+                                    <li><a href="">درباره ما</a></li>
+                                    <li><a href="">تماس با ما</a></li>
+                                    <li><a href="">خرید شعر</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <ul>
+                                    <h4>دسترسی آسان</h4>
+                                    <li><a href="">اشعار</a></li>
+                                    <li><a href="">مقالات</a></li>
+                                    <li><a href="">درباره ما</a></li>
+                                    <li><a href="">تماس با ما</a></li>
+                                    <li><a href="">خرید شعر</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-links">
+                                <ul>
+                                    <h4>دسترسی آسان</h4>
+                                    <li><a href="">اشعار</a></li>
+                                    <li><a href="">مقالات</a></li>
+                                    <li><a href="">درباره ما</a></li>
+                                    <li><a href="">تماس با ما</a></li>
+                                    <li><a href="">خرید شعر</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>ّ
+</body>
+</html>

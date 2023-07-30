@@ -1,0 +1,364 @@
+@font-face {
+    font-family: samim;
+    src: url('../fonts/Samim-FD.ttf');
+}
+
+@font-face {
+    font-family: samimBold;
+    src: url('../fonts/Samim-Bold.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: samim;
+    background: #f0f2f5;
+}
+
+nav {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px #d4d4d4;
+}
+
+.logo {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.moblie-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: block;
+    font-family: samimBold;
+    position: fixed;
+    top: 4.88rem;
+    right: 0;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(#fff, rgb(235, 235, 235));
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.088);
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+
+.nav-links-after {
+    transform: translateY(0);
+}
+
+.nav-links .right-side li {
+    list-style-type: none;
+    padding: 5px 0;
+    margin: 8px 0;
+}
+
+.nav-links .right-side li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.search-top input[type=text] {
+    padding: 6px;
+    font-family: samim;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.search-top input[type=text]:focus {
+    outline: 1px solid blue;
+}
+
+.search-top button {
+    background: none;
+    border: none;
+}
+
+.search-top button:focus {
+    border: none;
+    outline: none;
+}
+
+.login-btn a {
+    text-decoration: none;
+    color: #540c97;
+    padding: 5px 10px;
+    border: 2px dotted #540c97;
+    transition: all .3s ease-in-out;
+}
+
+.login-btn a:hover {
+    color: #fff;
+    background: #540c97;
+    border: 2px dotted #fff;
+}
+
+/* ============ */
+
+.ncl {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    position: relative;
+    padding: 8px;
+}
+
+.bold {
+    font-family: samimBold;
+}
+
+.all-poet-body ul {
+    list-style-type: none;
+}
+
+.all-poet-body li {
+    margin-bottom: .5rem;
+}
+
+.all-poet-body ul a {
+    color: #5a9cff;
+    text-decoration: none;
+}
+
+.all-poet-body ul a:hover {
+    color: #0d6efd;
+}
+
+.bg-color {
+    /* background-color: #f4f9ff; */
+    color: darkblue;
+    /* border-radius: 10px; */
+}
+
+.edame-poet {
+    display: none;
+}
+
+.display-poet {
+    display: block;
+}
+
+/* ============ */
+
+
+.footer-section {
+    background: #23272b;
+    color: white;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-links {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.footer-links ul li a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.poet-date p {
+    font-size: 1.1rem;
+}
+
+.top-title {
+    padding: 10px;
+}
+
+.hr {
+    display: block;
+    max-width: 200px;
+    border-width: 3px;
+    border-color: red;
+    background-color: #0d6efd;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.poet-pics img {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.poet-picture {
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.poet-picture img {
+    width: 100%;
+}
+
+.caption-box {
+    position: relative;
+}
+
+.caption-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.caption-box .poet-name-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(13, 109, 253, 0.674);
+}
+
+.caption-box:hover .poet-name-hover{
+    opacity: 1;
+}
+
+.caption-box .name{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.caption-box .name a{
+    color: white;
+    text-decoration: none;
+}
+
+.event-section p {
+    color: #888;
+}
+
+.event-section a {
+    text-decoration: none;
+    color: #5a9cff;
+    font-size: 1.1rem;
+}
+
+.event-section a:hover {
+    color: #0d6efd;
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        display: flex;
+    }
+
+    .logo h2 {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        position: unset;
+        display: flex;
+        justify-content: space-between;
+        height: 5px;
+        background: none;
+        transform: translateX(0);
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links ul {
+        text-align: center;
+        margin: 0;
+
+        display: inline-flex;
+    }
+
+    .nav-links ul a {
+        padding: .5em 1em;
+        transition: all .2 ease-in-out;
+    }
+
+    .nav-links ul a:hover {
+        color: rgb(72, 72, 72);
+    }
+
+    .moblie-btn {
+        display: none;
+    }
+
+    .left-side {
+        display: flex;
+    }
+
+    .login-btn {
+        margin-right: 2rem;
+    }
+
+    .search-top input[type="text"] {
+        width: 20em;
+        border-bottom: 1px solid #888;
+        border-radius: 0;
+        transition: all .4s ease-in-out;
+    }
+
+    .search-top input[type="text"]:focus {
+        outline: none;
+        border-bottom: 2px solid #888;
+    }
+
+    .nav-links .right-side li a {
+        font-size: 1rem;
+    }
+
+    .footer-links {
+        margin-top: 1.5rem;
+        text-align: right;
+    }
+
+    .footer-section ul {
+        list-style-type: circle;
+    }
+
+}
